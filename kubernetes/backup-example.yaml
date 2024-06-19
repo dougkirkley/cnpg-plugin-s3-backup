@@ -1,0 +1,15 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Backup
+metadata:
+  name: backup-example
+spec:
+  cluster:
+    name: cluster-example
+
+  method: plugin
+  pluginConfiguration:
+    name: s3-backup.cloudnative-pg.io
+    parameters:
+      image: plugin-s3-backup:latest
+      bucket: cloudnative-s3-backups
+      prefix: postgres

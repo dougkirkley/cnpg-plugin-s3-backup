@@ -1,0 +1,15 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: cluster-example
+spec:
+  instances: 1
+
+  plugins:
+  - name: s3-backup.cloudnative-pg.io
+    parameters:
+      image: plugin-s3-backup:latest
+      bucket: cloudnative-s3-backups
+
+  storage:
+    size: 10Gi
