@@ -1,4 +1,4 @@
-name: Plugin PVC Backup CI
+name: Plugin S3 Backup CI
 on:
   push:
     branches:
