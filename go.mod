@@ -2,6 +2,8 @@ module github.com/dougkirkley/cnpg-plugin-s3-backup
 
 go 1.22.4
 
+replace gitlab.eitccorp.com/ionic/infra/magelib => gitlab.eitccorp.com/ionic/infra/magelib.git v0.1.26
+
 require (
 	github.com/aws/aws-sdk-go-v2 v1.27.2
 	github.com/aws/aws-sdk-go-v2/config v1.27.18
@@ -12,6 +14,7 @@ require (
 	github.com/go-logr/logr v1.4.1
 	github.com/google/uuid v1.6.0
 	github.com/spf13/cobra v1.8.0
+	gitlab.eitccorp.com/ionic/infra/magelib v0.0.0-00010101000000-000000000000
 	google.golang.org/grpc v1.63.2
 	k8s.io/api v0.29.4
 	k8s.io/apimachinery v0.29.4
@@ -65,6 +68,7 @@ require (
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
 	github.com/kubernetes-csi/external-snapshotter/client/v7 v7.0.0 // indirect
 	github.com/lib/pq v1.10.9 // indirect
+	github.com/magefile/mage v1.15.0 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mitchellh/go-ps v1.0.0 // indirect
